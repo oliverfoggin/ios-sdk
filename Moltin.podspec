@@ -4,7 +4,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.homepage     = 'http://github.com/moltin/ios-sdk.git'
   s.authors      = { 'Moltin' => 'support@moltin.com', 'Dylan McKee' => 'dylan@djmckee.co.uk', 'Gasper Rebernak' => 'rebernak.gasper@gmail.com' }
-  s.platform     = :ios, '7.0'
+  s.ios.minimum_deployment_target = '7.0'
+  s.watchos.minimum_deployment_target = '3.0'
   s.description  = <<-DESC
 		iOS SDK for the Moltin eCommerce API.
 	DESC
